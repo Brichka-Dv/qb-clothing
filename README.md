@@ -24,6 +24,9 @@ qb-core
 ensure qb-core
 ensure qb-clothing
 ```
-
 # Configuration
 Please see config.lua
+
+# rights 
+discord : ```Yassine Brichka#4079```
+github: https://github.com/Brichka 
