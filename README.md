@@ -21,7 +21,8 @@ qb-core
 - Import qb-clothing.sql in your database
 - Add the following code to your server.cfg/resouces.cfg
 ``` ensure qb-core
- ensure qb-clothing ```
+ ensure qb-clothing
+```
 
 # Configuration
 Please see config.lua
