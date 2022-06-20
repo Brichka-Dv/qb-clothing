@@ -28,6 +28,5 @@ ensure qb-clothing
 Please see config.lua
 
 # rights 
-- discord : 
-```Yassine Brichka#4079```
+-discord : https://discord.gg/p8HRkBZjh2
 - github: https://github.com/Brichka 
