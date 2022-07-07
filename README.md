@@ -1,9 +1,6 @@
 # qb-clothing
 Clothing Script Used With QB-Core 
 
-# Dependencies
-qb-core
-
 # Screenshots
 ![This is an image](https://i.imgur.com/TmbwS8i.png)
 ![This is an image](https://i.imgur.com/v4zRQCg.png)
