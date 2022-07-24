@@ -380,13 +380,13 @@ Citizen.CreateThread(function()
                             if IsControlJustPressed(0, 38) then -- E
                                 if Config.Stores[k].shopType == "clothing" then
                                     customCamLocation = nil
-                                    TriggerEvent("doj:client:clothingMenu")
+                                    TriggerEvent("qb-clothing:client:clothingMenu")
                                 elseif Config.Stores[k].shopType == "barber" then
                                     customCamLocation = nil
-                                    TriggerEvent("doj:client:barberMenu")
+                                    TriggerEvent("qb-clothing:client:barberMenu")
                                 elseif Config.Stores[k].shopType == "surgeon" then
                                     customCamLocation = nil
-                                    TriggerEvent("doj:client:surgeonMenu")
+                                    TriggerEvent("qb-clothing:client:surgeonMenu")
                                 end
                             end
                         end
@@ -407,13 +407,13 @@ Citizen.CreateThread(function()
 end)
 
 
-RegisterNetEvent('doj:client:clothingMenu', function()
+RegisterNetEvent('qb-clothing:client:clothingMenu', function()
 	exports['qb-menu']:openMenu({
 		{
 			header = "Clothing Shop",
 			txt = "Pay with cash: $"..Config.Cost.ClothingCash,
             params = {
-				event = "doj:server:payForClothing",
+				event = "qb-clothing:server:payForClothing",
                 isServer = true,
                 args = 1
 			}
@@ -422,7 +422,7 @@ RegisterNetEvent('doj:client:clothingMenu', function()
 			header = "Clothing Shop",
 			txt = "Pay with bank: $"..Config.Cost.ClothingBank,
 			params = {
-				event = "doj:server:payForClothing",
+				event = "qb-clothing:server:payForClothing",
                 isServer = true,
                 args = 2
 			}
@@ -437,13 +437,13 @@ RegisterNetEvent('doj:client:clothingMenu', function()
 	})
 end)
 
-RegisterNetEvent('doj:client:barberMenu', function()
+RegisterNetEvent('qb-clothing:client:barberMenu', function()
 	exports['qb-menu']:openMenu({
 		{
 			header = "Barber Shop",
 			txt = "Pay with cash: $"..Config.Cost.BarberCash,
             params = {
-				event = "doj:server:payForBarber",
+				event = "qb-clothing:server:payForBarber",
                 isServer = true,
                 args = 1
 			}
@@ -452,7 +452,7 @@ RegisterNetEvent('doj:client:barberMenu', function()
 			header = "Barber Shop",
 			txt = "Pay with bank: $"..Config.Cost.BarberBank,
 			params = {
-				event = "doj:server:payForBarber",
+				event = "qb-clothing:server:payForBarber",
                 isServer = true,
                 args = 2
 			}
@@ -468,13 +468,13 @@ RegisterNetEvent('doj:client:barberMenu', function()
 end)
 
 
-RegisterNetEvent('doj:client:surgeonMenu', function()
+RegisterNetEvent('qb-clothing:client:surgeonMenu', function()
 	exports['qb-menu']:openMenu({
 		{
 			header = "Surgeon Shop",
 			txt = "Pay with cash: $"..Config.Cost.SurgeonCash,
             params = {
-				event = "doj:server:payWithCash",
+				event = "qb-clothing:server:payWithCash",
                 isServer = true,
                 args = 1
 			}
@@ -483,7 +483,7 @@ RegisterNetEvent('doj:client:surgeonMenu', function()
 			header = "Surgeon Shop",
 			txt = "Pay with bank: $"..Config.Cost.SurgeonBank,
 			params = {
-				event = "doj:server:payWithBank",
+				event = "qb-clothing:server:payWithBank",
                 isServer = true,
                 args = 2
 			}
@@ -499,7 +499,7 @@ RegisterNetEvent('doj:client:surgeonMenu', function()
 end)
 
 
-RegisterNetEvent('doj:client:accessShop', function(args)
+RegisterNetEvent('qb-clothing:client:accessShop', function(args)
     local args = tonumber(args)
     if args == 1 then 
         openMenu({
