@@ -1,4 +1,4 @@
-# qb-clothing
+De# qb-clothing
 Clothing Script Used With QB-Core 
 
 # Dependencies
@@ -28,5 +28,5 @@ ensure qb-clothing
 Please see config.lua
 
 # rights 
--discord : https://discord.gg/p8HRkBZjh2
+- discord : https://discord.gg/p8HRkBZjh2
 - github: https://github.com/Brichka 
