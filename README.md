@@ -1,4 +1,4 @@
-De# qb-clothing
+# qb-clothing
 Clothing Script Used With QB-Core 
 
 # Dependencies
